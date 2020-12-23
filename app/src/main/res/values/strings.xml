@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">LoadImageFromURL</string>
+    <string name="castle_url">https://themidleages.files.wordpress.com/2012/09/medieval-english-castles.jpg</string>
+</resources>
