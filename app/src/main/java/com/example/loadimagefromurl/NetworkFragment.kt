@@ -113,16 +113,16 @@ class NetworkFragment : Fragment() {
      * Start non-blocking execution of DownloadTask.
      * deals with downloadTask
      */
-    /*fun startDownload() {
+    fun startDownload() {
         Log.i("Rohit:function_Fragment","StartDownload")
         //downloadTask might not have been initialized
         downloadTask?.cancel(true)
 
-        *//*downloadTask = callback?.let {
+        downloadTask = callback?.let {
             DownloadTask(it).apply{
                 this.execute(urlString)
             }
-        }*//*
+        }
 
         if(callback != null){
             Log.i("Rohit:Fragment","Callback is not null")
@@ -136,7 +136,7 @@ class NetworkFragment : Fragment() {
                 execute(urlString)
             }
         }
-    }*/
+    }
 
     /**
      * Cancel (and interrupt if necessary) any ongoing DownloadTask execution.
