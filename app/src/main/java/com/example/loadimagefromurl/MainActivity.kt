@@ -50,7 +50,11 @@ class MainActivity : FragmentActivity(), DownloadCallback<String>, SwipeRefreshL
             }
         }
     }
+<<<<<<< HEAD
     //hello world
+=======
+    //Hi there
+>>>>>>> Checking rebase 2
     override fun onStart() {
         super.onStart()
         Log.i("Rohit","onStartInvoked")
