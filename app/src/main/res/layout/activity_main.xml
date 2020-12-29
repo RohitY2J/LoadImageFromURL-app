@@ -13,14 +13,15 @@
         android:layout_height="match_parent">
 
         <TextView
+            android:id="@+id/header"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
             android:text="LoadFromURL"
-            android:textSize="20sp"
-            android:layout_centerHorizontal="true"
-            android:id="@+id/header"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black"
+            android:textSize="20sp" />
 
 
         <ImageView
@@ -31,6 +32,16 @@
             android:layout_marginTop="20dp"
             android:layout_alignParentLeft="true"
             tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imageView"
+            android:id="@+id/container"
+            android:layout_marginTop="20dp"
+            android:name="com.example.loadimagefromurl.RecycleFragment"
+            />
+
 
     </RelativeLayout>
 
